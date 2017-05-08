@@ -7,9 +7,13 @@ new Vue({
         changeTitle: function(event) {
             this.title = event.target.value;    
     },
-        sayHello: function() {
+    sayHello: function() {
             return 'Hello!';
-        }
+        },
+    sayHello_2: function() {
+        return this.title;
+    }
+        
     
 }
 });
