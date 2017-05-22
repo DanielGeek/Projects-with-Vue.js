@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Css class basic with Vue.js 2</title>
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="css/css_class.css">
+</head>
+
+<body>
+
+    <div id="app">
+        <div class="demo" @click="attachAqua = !attachAqua"
+        :class="{aqua: attachAqua}"> <!-- intercambia color al darle click -->
+        </div>
+        <div class="demo"
+            :class="{aqua: attachAqua}"></div>
+        <div class="demo"></div>
+    </div>
+        
+<script src="js/css_class.js"></script>        
+</body>
+
+</html>
