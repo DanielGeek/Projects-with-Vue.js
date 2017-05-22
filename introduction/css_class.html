@@ -11,15 +11,14 @@
 <body>
 
     <div id="app">
-        <div class="demo" @click="attachAqua = !attachAqua"
-        :class="{aqua: attachAqua}"> <!-- intercambia color al darle click -->
+        <div class="demo" @click="attachAqua = !attachAqua" :class="divClasses">
+            <!-- intercambia color al darle click -->
         </div>
-        <div class="demo"
-            :class="{aqua: attachAqua}"></div>
+        <div class="demo" :class="{aqua: attachAqua}"></div>
         <div class="demo"></div>
     </div>
-        
-<script src="js/css_class.js"></script>        
+
+    <script src="js/css_class.js"></script>
 </body>
 
 </html>
