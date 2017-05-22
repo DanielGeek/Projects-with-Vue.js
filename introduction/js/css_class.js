@@ -1,7 +1,8 @@
 new Vue({
     el: '#app',
     data: {
-        attachAqua: false
+        attachAqua: false,
+        color: 'green'
     },
     computed: {
         divClasses: function () {

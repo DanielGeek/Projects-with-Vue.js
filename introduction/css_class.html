@@ -15,7 +15,9 @@
             <!-- intercambia color al darle click -->
         </div>
         <div class="demo" :class="{aqua: attachAqua}"></div>
-        <div class="demo"></div>
+        <div class="demo" :class="[color, {aqua: attachAqua}]"></div>
+        <hr>
+        <input type="text" v-model="color">
     </div>
 
     <script src="js/css_class.js"></script>
