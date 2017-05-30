@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Rendering Lists with v-for with Vue.js 2</title>
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <ul>
+            <li v-for="(ingredient, i) in ingredients" >{{ ingredient }} ({{ i }})</li>
+        </ul>
+    </div>
+    <script src="js/v-for.js"></script>
+</body>
+
+</html>
