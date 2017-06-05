@@ -1,11 +1,7 @@
 <template>
-<app-server-status></app-server-status>
+<app-servers></app-servers>
 </template>
 
 <script>
 
 </script>
-
-<style>
-
-</style>
