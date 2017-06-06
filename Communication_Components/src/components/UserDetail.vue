@@ -4,6 +4,7 @@
   <p>Many Details</p>
   <p>User Name: {{ switchName() }}</p>
   <button type="button" name="button" @click="resetName">Reset Name</button>
+  <button type="button" name="button" @click="resetFn()">Reset Name</button>
 </div>
 </template>
 
@@ -12,7 +13,8 @@ export default {
   props: {
     myName: {
       type: String
-    }
+    },
+    resetFn: Function
   },
   methods: {
     switchName() {
