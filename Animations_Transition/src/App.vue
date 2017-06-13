@@ -20,6 +20,10 @@
       <transition enter-active-class="animated bounce" leave-active-class="animated shake">
         <div class="alert alert-info" v-if="show">This is some Info</div>
       </transition>
+      <transition :name="alertAnimation" mode="out-in">
+        <div class="alert alert-info" v-if="show" key="info">This is some Info</div>
+        <div class="alert alert-warning" v-else key="warning">This is some Warning</div>
+      </transition>
     </div>
   </div>
 </div>
@@ -68,7 +72,7 @@ export default {
 
 .slide-leave-active {
   animation: slide-out 1s ease-out forwards;
-  transition: opacity 3s;
+  transition: opacity 1s;
   opacity: 0;
 }
 
