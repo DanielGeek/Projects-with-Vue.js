@@ -29,17 +29,19 @@
               username: '',
               email: ''
             },
-            users: []
+            users: [],
+            resources: {}
         };
       },
       methods: {
         submit() {
-          this.$http.post('', this.user)
-                      .then(response => {
-                        console.log(response);
-                      }, error => {
-                        console.log(error);
-                      });
+          // this.$http.post('data.json', this.user)
+          //             .then(response => {
+          //               console.log(response);
+          //             }, error => {
+          //               console.log(error);
+          //             });
+          this.resource.save({}, this.user);
         },
         fetchData() {
             this.$http.get('')
@@ -54,6 +56,9 @@
                         this.users = resultArray;
                     });
         }
+      },
+      created() {
+        this.resource = this.$resource('data.json');
       }
     }
 </script>
