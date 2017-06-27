@@ -27,7 +27,12 @@
       },
       methods: {
         submit() {
-          console.log(this.user);
+          this.$http.post('https://vuejs-http-c72c1.firebaseio.com/data.json', this.user)
+                      .then(response => {
+                        console.log(response);
+                      }, error => {
+                        console.log(error);
+                      });
         }
       }
     }
