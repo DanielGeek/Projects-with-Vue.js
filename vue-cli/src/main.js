@@ -1,5 +1,9 @@
 import Vue from 'vue'
-import App from './Home.vue'
+import App from './App.vue'
+import Home from './Home.vue'
+
+//nombre del componente app-server-status para Home.vue
+Vue.component('app-server-status', Home);
 
 new Vue({
   el: '#app',
